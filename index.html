@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a little Form</p>
+        </div>
+        <div id="form">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="age" id="age-label">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="name" class="form-control" placeholder="Age" min="13" max="99">
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="leaner">Full Time Leaner</option>
+                        <option value="peferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Do you like your life?</p>
+                    <div id="option-group"></div>
+                    <label>
+                        <input name="user-life" value="yes" type="radio" class="input-radio" />Yes
+                    </label>
+                    <label>
+                        <input name="user-life" value="no" type="radio" class="input-radio" checked />No
+                    </label>
+                    <label>
+                        <input name="user-life" value="idn" type="radio" class="input-radio" />I´dont know
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>What is your favorite pet?</p>
+                    <select name="pet" id="favorite-pet" class="form-control" required>
+                        <option disabled selected value>Select yout favorite pet</option>
+                        <option value="student">Cat</option>
+                        <option value="job">Dog</option>
+                        <option value="leaner">Rabbit</option>
+                        <option value="peferNo">Tortoise</option>
+                        <option value="other">cow</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What countries would you like to visit?</p>
+                    <div id="contries-group">
+                        <label>
+                            <input type="checkbox" name="contry" value="peru" class="input-checkbox" /> Peru
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="franch" class="input-checkbox" /> Franch
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="germany" class="input-checkbox" /> Germany
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="china" class="input-checkbox" /> China
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="brazil" class="input-checkbox" /> Brazil
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="spain" class="input-checkbox" /> Spain
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="russia" class="input-checkbox" /> Russia
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="japan" class="input-checkbox" /> Japan
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="mexico" class="input-checkbox" /> Mexico
+                        </label>
+                        <label>
+                            <input type="checkbox" name="contry" value="italy" class="input-checkbox" /> Italy
+                        </label>
+                    </div>
+                </div>
+                <div id="coment-group" class="form-group">
+                    <p id="coment-text">Tell me about you</p>
+                    <textarea name="comment" id="coments" class="input-area" placeholder="Tell me..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-buttom">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
